@@ -30,6 +30,17 @@ public static partial class SpanExtensions
     public static T? Find<T>(this Span<T> source, Predicate<T> match)
         => Find((ReadOnlySpan<T>)source, match);
 
+    public static bool All<T>(this ReadOnlySpan<T> source, Predicate<T> predicate)
+    {
+        ArgumentNullException.ThrowIfNull(nameof(predicate));
+        foreach (var item in source)
+        {
+            if (!predicate(item))
+                return false;
+        }
+        return true;
+    }
+
     public static bool Any<T>(this ReadOnlySpan<T> source, Predicate<T> predicate)
     {
         ArgumentNullException.ThrowIfNull(nameof(predicate));
