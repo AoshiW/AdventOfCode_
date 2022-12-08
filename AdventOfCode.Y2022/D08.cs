@@ -43,7 +43,7 @@ public class D08 : IDay<int>
         if (isVisible)
             return true;
         isVisible = true;
-        for (int i = y - 1; i >= 0; i--)
+        for (int i = 0; i < y; i++)
         {
             if (line[i] >= c)
             {
@@ -65,7 +65,7 @@ public class D08 : IDay<int>
         if (isVisible)
             return true;
         isVisible = true;
-        for (int i = x - 1; i >= 0; i--)
+        for (int i = 0; i < x; i++)
         {
             if (map[i][y] >= c)
             {

@@ -4,7 +4,7 @@ namespace Kunc.AdventOfCode.Utils;
 
 public static class MultidimensionalArrayExtensions
 {
-    public static IEnumerable<T> AsEnumerable<T>(this T[] array)
+    public static IEnumerable<T> AsEnumerable<T>(this T[,] array)
     {
         ArgumentNullException.ThrowIfNull(array);
         foreach (var item in array)
