@@ -1,0 +1,22 @@
+<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	
+	<ItemGroup Condition="$(AssemblyName.StartsWith('AdventOfCode.Y20'))">
+		<Using Include="Kunc.AdventOfCode"/>
+		<Using Include="Kunc.AdventOfCode.Utils"/>
+		<ProjectReference Include="..\Kunc.AdventOfCode.Core\Kunc.AdventOfCode.Core.csproj" />
+		<ProjectReference Include="..\Kunc.AdventOfCode.Utils\Kunc.AdventOfCode.Utils.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="$(AssemblyName.StartsWith('AdventOfCode.'))">
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+	
+</Project>
+    
