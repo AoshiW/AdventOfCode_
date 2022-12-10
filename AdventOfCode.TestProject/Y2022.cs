@@ -13,8 +13,8 @@ public class Y2022
     [TestMethod] public async Task D06() => await Assert.That.TestDayAsync<D06>(1920, 2334);
     [TestMethod] public async Task D07() => await Assert.That.TestDayAsync<D07>(1667443, 8998590);
     [TestMethod] public async Task D08() => await Assert.That.TestDayAsync<D08>(1560, 252000);
-    //[TestMethod] public async Task D09() => await Assert.That.TestDayAsync<D09>(default, default);
-    //[TestMethod] public async Task D10() => await Assert.That.TestDayAsync<D10>(default, default);
+    [TestMethod] public async Task D09() => await Assert.That.TestDayAsync<D09>(6090, 2566);
+    [TestMethod] public async Task D10() => await Assert.That.TestDayAsync<D10>("13760", "RFKZCPEF");
     //[TestMethod] public async Task D11() => await Assert.That.TestDayAsync<D11>(default, default);
     //[TestMethod] public async Task D12() => await Assert.That.TestDayAsync<D12>(default, default);
     //[TestMethod] public async Task D13() => await Assert.That.TestDayAsync<D13>(default, default);
