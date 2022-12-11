@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace AdventOfCode.Y2022;
+﻿namespace AdventOfCode.Y2022;
 
 public class D10 : IDay<string>
 {

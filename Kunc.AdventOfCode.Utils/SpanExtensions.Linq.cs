@@ -65,4 +65,15 @@ public static partial class SpanExtensions
     }
     public static T Sum<T>(this Span<T> source) where T : INumberBase<T>
         => Sum((ReadOnlySpan<T>)source);
+
+    public static int Count<T>(this ReadOnlySpan<T> span, Predicate<T> predicate)
+    {
+        var count = 0;
+        foreach (var item in span)
+        {
+            if (predicate(item))
+                count++;
+        }
+        return count;
+    }
 }
