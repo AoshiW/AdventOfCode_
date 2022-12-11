@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D24 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 24;
 
-    /// <inheritdoc/>
     public string Title => "Lobby Layout";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         return Init(span).Count;
@@ -63,7 +59,6 @@ public class D24 : IDay<int>
         return black;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         var black = Init(span);
@@ -89,9 +84,7 @@ public class D24 : IDay<int>
                     }
                 }
             }
-            var t = temp;
-            temp = black;
-            black = t;
+            (black, temp) = (temp, black);
             temp.Clear();
         }
         return black.Count;

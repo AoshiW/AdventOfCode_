@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D06 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 6;
 
-    /// <inheritdoc/>
     public string Title => "Custom Customs";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         int sum = 0;
@@ -34,7 +30,6 @@ public class D06 : IDay<int>
         return sum + set.Count;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         var dic = new Dictionary<char, int>();

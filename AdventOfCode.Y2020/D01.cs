@@ -2,16 +2,12 @@
 
 public class D01 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 1;
 
-    /// <inheritdoc/>
     public string Title => "Report Repair";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         var nums = ParseInput(span);
@@ -37,8 +33,7 @@ public class D01 : IDay<int>
         }
         return list;
     }
-
-    /// <inheritdoc/>
+    
     public int Part2(ReadOnlySpan<char> span)
     {
         var nums = ParseInput(span);

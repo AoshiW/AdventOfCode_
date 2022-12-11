@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D14 : IDay<ulong>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 14;
 
-    /// <inheritdoc/>
     public string Title => "Docking Data";
 
-    /// <inheritdoc/>
     public ulong Part1(ReadOnlySpan<char> span)
     {
         var mem = new Dictionary<int, ulong>();
@@ -47,7 +43,6 @@ public class D14 : IDay<ulong>
         return sum;
     }
 
-    /// <inheritdoc/>
     public ulong Part2(ReadOnlySpan<char> span)
     {
         var mem = new Dictionary<string, ulong>();

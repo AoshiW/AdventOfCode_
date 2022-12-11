@@ -2,16 +2,12 @@
 
 public class D13 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 13;
 
-    /// <inheritdoc/>
     public string Title => "Shuttle Search";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         var input = ParseInput(span);
@@ -41,6 +37,5 @@ public class D13 : IDay<long>
         return (timestamp, bu);
     }
 
-    /// <inheritdoc/>  
     public long Part2(ReadOnlySpan<char> span) => throw new NotImplementedException();
 }

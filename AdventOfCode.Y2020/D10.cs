@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D10 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 10;
 
-    /// <inheritdoc/>
     public string Title => "Adapter Array";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         var adapters = ParseInput(span);
@@ -47,7 +43,6 @@ public class D10 : IDay<long>
         return list;
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span)
     {
         var adapters = ParseInput(span);
@@ -70,7 +65,7 @@ public class D10 : IDay<long>
 
     static long CalculateNumberOfOptions(ReadOnlySpan<int> adapters)
     {
-        if (adapters.Length - 1 == 0)
+        if (adapters.Length  == 1)
             return 1;
         var sum = 0L;
         for (int i = 0; i < 3 && i + 1 < adapters.Length; i++)

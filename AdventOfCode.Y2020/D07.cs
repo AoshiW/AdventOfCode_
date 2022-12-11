@@ -2,16 +2,12 @@
 
 public class D07 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 7;
 
-    /// <inheritdoc/>
     public string Title => "Handy Haversacks";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         var dic = ParseInput(span, false);
@@ -74,7 +70,6 @@ public class D07 : IDay<int>
         return dic;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         var dic = ParseInput(span, 1);

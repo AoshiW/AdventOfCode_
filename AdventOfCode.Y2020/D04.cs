@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D04 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 4;
 
-    /// <inheritdoc/>
     public string Title => "Passport Processing";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         int valid = 0;
@@ -61,7 +57,6 @@ public class D04 : IDay<int>
         "oth"
     };
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         var valid = 0;

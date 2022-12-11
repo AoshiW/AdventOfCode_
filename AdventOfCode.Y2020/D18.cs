@@ -2,16 +2,12 @@
 
 public class D18 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 18;
 
-    /// <inheritdoc/>
     public string Title => "Operation Order";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         long sum = 0;
@@ -84,7 +80,6 @@ public class D18 : IDay<long>
         return stak.Pop();
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span)
     {
         long sum = 0;

@@ -2,16 +2,12 @@
 
 public class D19 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 19;
 
-    /// <inheritdoc/>
     public string Title => "Monster Messages";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         var input = ParseInput(span);
@@ -77,6 +73,5 @@ public class D19 : IDay<int>
         return (dic, list);
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span) => throw new NotImplementedException();
 }

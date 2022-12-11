@@ -2,16 +2,12 @@
 
 public class D23 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 23;
 
-    /// <inheritdoc/>
     public string Title => "Crab Cups";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         var input = ParseInput(span);
@@ -50,7 +46,6 @@ public class D23 : IDay<long>
         return input;
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span)
     {
         var input = new LinkedList<long>(ParseInput(span));

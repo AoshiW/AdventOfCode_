@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D12 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 12;
 
-    /// <inheritdoc/>
     public string Title => "Rain Risk";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         int n = 0, e = 0, r = 90;
@@ -50,7 +46,6 @@ public class D12 : IDay<int>
         return Math.Abs(e) + Math.Abs(n);
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         Point ship = new(),

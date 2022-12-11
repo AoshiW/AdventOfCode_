@@ -2,16 +2,12 @@
 
 public class D16 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 16;
 
-    /// <inheritdoc/>
     public string Title => "Ticket Translation";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         var input = ParseInput(span);
@@ -91,6 +87,5 @@ public class D16 : IDay<long>
         result.Add((name, list));
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span) => throw new NotImplementedException();
 }

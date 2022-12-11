@@ -2,16 +2,12 @@
 
 public class D02 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 2;
 
-    /// <inheritdoc/>
     public string Title => "Password Philosophy";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         int count = 0;
@@ -25,7 +21,6 @@ public class D02 : IDay<int>
         return count;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         int count = 0;
@@ -37,7 +32,6 @@ public class D02 : IDay<int>
             if (password[n1] == c && password[n2] != c || password[n1] != c && password[n2] == c)
                 count++;
         }
-
         return count;
     }
 

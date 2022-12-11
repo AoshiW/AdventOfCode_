@@ -1,19 +1,13 @@
-﻿using System.Runtime.InteropServices;
-
-namespace AdventOfCode.Y2020;
+﻿namespace AdventOfCode.Y2020;
 
 public class D09 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 9;
 
-    /// <inheritdoc/>
     public string Title => "Encoding Error";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         var nums = ParseInput(span);
@@ -48,7 +42,6 @@ public class D09 : IDay<long>
         return list;
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span)
     {
         var numss = ParseInput(span);

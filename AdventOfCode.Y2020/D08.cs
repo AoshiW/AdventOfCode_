@@ -4,16 +4,12 @@ namespace AdventOfCode.Y2020;
 
 public class D08 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 8;
 
-    /// <inheritdoc/>
     public string Title => "Handheld Halting";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         var instructions = ParseInput(span);
@@ -40,7 +36,6 @@ public class D08 : IDay<int>
         return list;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
         var instructions = ParseInput(span);

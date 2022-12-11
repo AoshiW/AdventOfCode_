@@ -2,16 +2,12 @@
 
 public class D05 : IDay<int>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 5;
 
-    /// <inheritdoc/>
     public string Title => "Binary Boarding";
 
-    /// <inheritdoc/>
     public int Part1(ReadOnlySpan<char> span)
     {
         int min, max, id, idM = 0, r, l, tmp;
@@ -52,10 +48,9 @@ public class D05 : IDay<int>
         return idM;
     }
 
-    /// <inheritdoc/>
     public int Part2(ReadOnlySpan<char> span)
     {
-        var k = new List<int>();
+        var k = new List<int>(1000);
         for (int i = 0; i < 1000; i++)
         {
             k.Add(i);

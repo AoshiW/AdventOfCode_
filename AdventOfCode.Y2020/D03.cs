@@ -2,16 +2,12 @@
 
 public class D03 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 3;
 
-    /// <inheritdoc/>
     public string Title => "Toboggan Trajectory";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         int x = 0, tree = 0;
@@ -24,12 +20,11 @@ public class D03 : IDay<long>
         return tree;
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span)
     {
         int x, tmp;
         long tree = 1;
-        var qq = new[] { (1, 1), (3, 1), (5, 1), (7, 1), (1, 2) };
+        ReadOnlySpan<(int,int)> qq = stackalloc[] { (1, 1), (3, 1), (5, 1), (7, 1), (1, 2) };
         for (int q = 0; q < qq.Length; q++)
         {
             tmp = x = 0;

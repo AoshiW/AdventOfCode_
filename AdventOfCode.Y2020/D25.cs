@@ -2,16 +2,12 @@
 
 public class D25 : IDay<long>
 {
-    /// <inheritdoc/>
     public int Year => 2020;
 
-    /// <inheritdoc/>
     public int Day => 25;
 
-    /// <inheritdoc/>
     public string Title => "Combo Breaker";
 
-    /// <inheritdoc/>
     public long Part1(ReadOnlySpan<char> span)
     {
         Span<long> input = stackalloc long[2];
@@ -46,6 +42,5 @@ public class D25 : IDay<long>
         return key;
     }
 
-    /// <inheritdoc/>
     public long Part2(ReadOnlySpan<char> span) => default;
 }
