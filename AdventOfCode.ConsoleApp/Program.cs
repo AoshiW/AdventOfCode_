@@ -1,17 +1,8 @@
 ﻿using Kunc.AdventOfCode;
-using Kunc.AdventOfCode.Utils;
 
 Console.WriteLine("Hello, Advent of Code");
-#if !DEBUG
+RunPuzzle();
 RunBenchmark<TodayDay, int>();
-return;
-#endif
-var day = new TodayDay();
-var input = Client.GetPuzzleInputAsync(day.Year, day.Day).Result;
-var span = input.AsSpan().TrimEnd();
-
-Console.WriteLine(day.Part1(span));
-Console.WriteLine(day.Part2(span));
 
 public class TodayDay : IDay<int>
 {

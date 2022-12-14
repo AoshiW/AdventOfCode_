@@ -15,4 +15,16 @@ public static partial class SpanExtensions
             destination[i * 2 + 1] = (souce[i] & 0xF).ToHex(isUpper);
         }
     }
+
+    public static void RotateRight<T>(this Span<T> span, int count, Span<T> buffer) where T : struct
+    {
+        var i = span.Length - count;
+        span.Slice(i).CopyTo(buffer);
+        span.Slice(0, i).CopyTo(span.Slice(count));
+        buffer.Slice(0, count).CopyTo(span);
+    }
+    public static void RotateLeft<T>(this Span<T> span, int count, Span<T> buffer) where T : struct
+    {
+        RotateRight(span, span.Length - count, buffer);
+    }
 }

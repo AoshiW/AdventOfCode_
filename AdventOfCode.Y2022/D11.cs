@@ -6,7 +6,9 @@ namespace AdventOfCode.Y2022;
 public partial class D11 : IDay<int>
 {
     public int Year => 2022;
+
     public string Title => "Monkey in the Middle";
+
     public int Day => 11;
 
     public int Part1(ReadOnlySpan<char> span)

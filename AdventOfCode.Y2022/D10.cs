@@ -3,7 +3,9 @@
 public class D10 : IDay<string>
 {
     public int Year => 2022;
+
     public string Title => "Cathode-Ray Tube";
+
     public int Day => 10;
 
     public string Part1(ReadOnlySpan<char> span)

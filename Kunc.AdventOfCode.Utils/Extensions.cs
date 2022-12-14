@@ -4,6 +4,9 @@ namespace Kunc.AdventOfCode.Utils;
 
 public static class Extensions
 {
+    public static int GetManhattanDistance(this Point p1, Point p2)
+        => Math.Abs(p1.X - p2.X) + Math.Abs(p1.Y - p2.Y);
+
     public static bool IsInRange<T>(this T item, T minInclusive, T maxExclusive) where T : IComparable<T>
         => item.CompareTo(minInclusive) >= 0 && item.CompareTo(maxExclusive) < 0;
 

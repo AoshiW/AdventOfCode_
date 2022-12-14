@@ -7,7 +7,7 @@ public partial class D11
     class Monkey
     {
         public List<BigInteger> StartTime { get; set; } = new(4);
-        public Func<BigInteger, BigInteger> Operation { get; set; }
+        public Func<BigInteger, BigInteger> Operation { get; set; } = default!;
         public uint Division;
         public int True;
         public int False;
