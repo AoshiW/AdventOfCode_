@@ -1,12 +1,14 @@
-﻿namespace AdventOfCode.Y2018;
+﻿using Kunc.AdventOfCode;
+
+namespace AdventOfCode.Y2018;
 
 public sealed class D01 : IDay<int>
 {
-    public static int Year => 2018;
+    public int Year => 2018;
 
-    public static int Day => 1;
+    public int Day => 1;
 
-    public static string Title => "Chronal Calibration";
+    public string Title => "Chronal Calibration";
 
     public int Part1(ReadOnlySpan<char> span)
     {

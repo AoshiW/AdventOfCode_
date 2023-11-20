@@ -1,16 +1,15 @@
-﻿using System.Numerics;
+﻿using Kunc.AdventOfCode;
 using System.Runtime.InteropServices;
-using System.Threading;
 
 namespace AdventOfCode.Y2018;
 
 public sealed class D02 : IDay<string>
 {
-    public static int Year => 2018;
+    public int Year => 2018;
 
-    public static int Day => 2;
+    public int Day => 2;
 
-    public static string Title => "Inventory Management System";
+    public string Title => "Inventory Management System";
 
     public string Part1(ReadOnlySpan<char> span)
     {

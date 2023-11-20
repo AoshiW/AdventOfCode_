@@ -10,12 +10,7 @@ public class D01 : IDay<int>
 
     public int Part1(ReadOnlySpan<char> span)
     {
-        int florr = 0;
-        foreach (var item in span)
-        {
-            florr += item == '(' ? 1 : -1;
-        }
-        return florr;
+        return span.Length - span.Count(')') * 2;
     }
 
     public int Part2(ReadOnlySpan<char> span)

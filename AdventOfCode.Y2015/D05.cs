@@ -40,7 +40,7 @@ public class D05 : IDay<int>
         return false;
     }
 
-    static readonly string[] ForbiddenPairs = new[] { "ab", "cd", "pq", "xy" };
+    static readonly string[] ForbiddenPairs = ["ab", "cd", "pq", "xy"];
 
     static bool NotContain(ReadOnlySpan<char> span)
     {
